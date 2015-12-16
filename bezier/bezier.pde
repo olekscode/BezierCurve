@@ -4,7 +4,7 @@ PointController pCtrl = new PointController(points, drawer);
 
 void setup() {
   size(750, 600);
-  background(0);
+  drawer.clear();
 }
 
 void draw() {
@@ -26,7 +26,7 @@ void mousePressed() {
   else {
     if (k > -1) {
       points.remove(k);
-      drawer.drawAllPoints();
+      drawer.drawEverything();
     }
   }
 }

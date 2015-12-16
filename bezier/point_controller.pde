@@ -10,13 +10,13 @@ class PointController {
   
   public void addPoint(Point p) {
     _points.append(p);
-    _drawer.drawAllPoints();
+    _drawer.drawEverything();
   }
   
   public void moveCapturedUnderCursor() {
     if (_captured_point_id != -1) {
       _points.update(_captured_point_id, new Point(mouseX, mouseY));
-      _drawer.drawAllPoints();
+      _drawer.drawEverything();
     }
   }
   
